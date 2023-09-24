@@ -1,4 +1,168 @@
 html {
-    background-color: lightgreen;
+    background-color: #efdaff;
     font-family: 'McLaren', cursive;
+}
+
+body {
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+/* Navbar */
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #3C096C;
+    border: solid 3px #10002B;
+}
+
+nav a {
+    color: #E0AAFF;
+    padding: 30px;
+    text-decoration: none;
+    background-color: #3C096C;
+    max-width: 1000px;
+}
+
+nav a:hover {
+    color: #FFFFFF;
+    background-color: #E0AAFF;
+}
+
+.logo-navbar {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;    /* if you want it vertically middle of the navbar. */
+    margin-right: 20px;
+}
+
+/* Main */
+
+h1, h2, h3, h4 {
+    color: #3C096C;
+}
+
+main {
+    margin-top: 50px;
+}
+
+/* Product */
+
+.products-container {
+    display: flex;
+}
+
+.products-container article {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.products-container article div {
+    flex: 1;
+}
+
+a.product-button {
+    display: block;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    border: 3px solid black;
+    background-color: #a676d3;
+}
+
+a.product-button:hover {
+    background-color: #FFFFFF;
+    color: black;
+}
+
+/* Info */
+
+.product-info {
+    display: flex;
+    border-top: 3px solid black;
+    margin-top: 10px;
+}
+
+.product-info article {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.product-info article div {
+    flex: 1;
+}
+
+.product-info .info-left-column {
+    background-color: #E0AAFF;
+    border-radius: 20px;
+    padding: 20px;
+    flex: 0.4;
+}
+
+.product-info .info.right.column {
+    flex: 4;
+    text-align: left;
+}
+
+/* Others */
+
+.product-others {
+    background-color: #bc9ed3;
+    border-top: 3px solid black;
+    text-align: center;
+    padding: 15px;
+}
+
+.product-others h2 {
+    margin: 0;
+}
+
+.product-others article {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+
+.product-others article div {
+    flex: 1;
+}
+
+.product-others img {
+    width: 250px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #23123f;
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #E0AAFF;
+    padding: 30px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #FFFFFF;
+    background-color: #E0AAFF;
 }
